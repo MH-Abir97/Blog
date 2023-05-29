@@ -1,0 +1,44 @@
+<br>
+<br>
+<br>
+<div class="row">
+  <div class="col-md-1">
+  </div>
+ <div class="col-md-10">
+  <form  [formGroup]="documentEntry">
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Title</label>
+      <input type="text" class="form-control" formControlName="title" placeholder="Title">
+    </div>
+    <div class="form-group">
+      <label >Description</label>
+      <textarea class="form-control" formControlName="description" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+      <label >Code</label>
+      <textarea class="form-control" formControlName="code"  rows="6"></textarea>
+    </div>
+    <div class="form-group">
+     <button class="btn btn-primary" (click)="Save()" >Save</button>
+     <button class="btn btn-danger" (click)="Reset()" style="margin: 5px;">Reset</button>
+    </div>
+  </form>
+ </div>
+
+ <div class="col-md-1">
+ </div>
+</div>
+
+<div class="row">
+<div class="col-md-1">
+
+</div>
+<div class="col-md-4">
+<input type="file" class="form-control" multiple (change)="SelectFile($event)">
+<br>
+<button (click)="OnSave()" class="btn btn-primary">Save</button>
+</div>
+</div>
+<br>
+<br>
+<br>

@@ -1,0 +1,30 @@
+
+<div class="row" style="padding-top: 40px;" *ngFor="let c of codeBlogList1">
+
+<div class="col-md-1"> </div>
+<div class="col-md-10">
+  <h3 *ngIf="c.title"> {{c.title}} </h3>
+  <h6 *ngIf="c.description">
+    {{c.description}}
+    <!-- <blockquote *ngIf="c.description" style="padding: 10px;"><pre><code style="color: white;">
+      {{c.description}}
+      </code></pre></blockquote> -->
+
+    </h6>
+  <h5 *ngIf="c.code"> </h5>
+  <div *ngIf="c.code" style="width: 100%;background-color: rgb(53, 51, 51);border-radius: 5px;text-align: left;">
+
+    <!-- <code style="color: white">
+
+    </code> -->
+
+    <blockquote *ngIf="c.code" style="padding: 10px;"><pre><code style="color: white;text-align: left;">
+      {{c.code}}
+      </code></pre></blockquote>
+
+
+  </div>
+
+</div>
+</div>
+<br>

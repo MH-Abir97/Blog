@@ -1,0 +1,35 @@
+.footer
+{
+  height: 340px;
+  width: 100%;
+  background-color: rgb(33 33 33);
+}
+.footer .row{
+   padding-top: 50px;
+}
+.footer h3{
+  color: white;
+}
+
+.footer p{
+  color: white;
+  text-align: justify;
+}
+
+@media (min-width: 1024px){
+  .col-md-3 {
+    flex: 0 0 auto;
+    width: 25%;
+    font-size: 14px;
+ }
+}
+
+@media (min-width: 1024px){
+  .col-md-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+    font-size: 14px;
+  }
+}
+
+

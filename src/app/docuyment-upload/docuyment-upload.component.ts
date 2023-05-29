@@ -59,9 +59,4 @@ this._http.post("https://localhost:44328/api/Demo/Upload",fromData).subscribe(aD
 })
 }
 
-
-
-
-
-
 }
